@@ -22,8 +22,8 @@ if "chat_history" not in st.session_state:
 if not st.session_state.chat_history:
     st.session_state.chat_history.append((
         "assistant",
-        "Hello! "
-        "I'm a programming specialist bot."
+        "Hello!\n\n"
+        "I'm a programming specialist bot.\n\n"
         "You can ask me any question related to programming, and I will help you."
     ))
 
