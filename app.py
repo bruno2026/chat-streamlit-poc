@@ -20,7 +20,10 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 if not st.session_state.chat_history:
-    st.session_state.chat_history.append(("assistant", "Hi! How can I help you?"))
+    st.session_state.chat_history.append((
+        "assistant",
+        "Hi! I am a programming specialist bot. You can ask me any question related to programming, and I will help you."
+    ))
 
 for role, message in st.session_state.chat_history:
     st.chat_message(role).write(message)
